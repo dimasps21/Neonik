@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neonik — новый мессенджер</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-wrapper">
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="bg-lines"></div>
+  <div class="bg-lines-2"></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-left">
+    <div class="logo">NEONIK</div>
+    <div class="nav-links">
+      <a href="#features">Возможности</a>
+      <a href="#security">Безопасность</a>
+      <a href="#about">О нас</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#channels">Сообщества</a>
+      <a href="#demo">Демо</a>
+      <a href="#news">Новости</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <button class="hamburger">☰</button>
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" type="button" aria-label="Переключить тему">
+      <span class="theme-toggle-icon theme-toggle-icon-sun"></span>
+      <span class="theme-toggle-icon theme-toggle-icon-moon"></span>
+    </button>
+    <a href="#download" class="btn-download">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.96.95-2.06 1.9-3.4 1.9-1.3 0-1.66-.78-3.23-.78s-1.98.76-3.23.78c-1.33.02-2.52-1-3.5-2.4C1.68 17.18.16 12.44 2.15 8.98c1-1.72 2.76-2.8 4.7-2.8 1.48 0 2.6.93 3.5.93.88 0 2.22-.93 3.73-.93 1.58 0 2.9.58 3.82 1.83-3.23 1.73-2.7 6.13.43 7.55-.74 1.76-1.73 3.5-3.28 4.72zM12.03 5.92c-.2.02-.4.03-.6.03-1.63 0-3.07-1.1-3.15-2.65-.02-.18-.02-.37 0-.55.15-1.57 1.55-2.75 3.1-2.75 1.63 0 2.95 1.25 3.1 2.82.02.18.02.35 0 .53-.13 1.4-1.3 2.52-2.45 2.57z"/></svg>
+      Скачать App
+    </a>
+  </div>
+</nav>
+
+<div class="scroll-progress">
+  <div class="scroll-progress-bar"></div>
+</div>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Полностью безопасное общение...</h1>
+    <p>Создали мессенджер, в котором можно просто общаться — без рекламы, с удобной приватностью и анонимностью по желанию.</p>
+
+    <ul class="hero-points">
+      <li>Нет рекламных баннеров и ленты.</li>
+      <li>Настраиваемая видимость номера и статуса.</li>
+      <li>Чаты, каналы и рабочие пространства в одном приложении.</li>
+    </ul>
+
+    <div class="btn-group">
+      <a href="#" class="btn-main btn-filled">Начать общение</a>
+      <a href="#security" class="btn-main btn-outline">Подробнее</a>
+    </div>
+  </div>
+
+  <div class="phone-display">
+    <div class="floating-card f-1">
+      <div style="font-size: 0.7rem; color: #22c55e; font-weight: 700; margin-bottom: 5px;">ACTIVE NOW</div>
+      <div style="font-size: 0.85rem;">Полное шифрование</div>
+    </div>
+    <div class="floating-card f-2">
+      <div style="font-size: 0.85rem;">Мы против прередачи данных другим лицам. Никакие данные не передаются</div>
+    </div>
+    
+    <div class="iphone-frame">
+      <div class="iphone-screen">
+        <div class="app-header">
+          <h3>Сообщения</h3>
+        </div>
+        
+        <div class="chat-row">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="ava" alt="">
+          <div class="chat-meta">
+            <span class="name">Никита Резнов</span>
+            <span class="msg">Отправил вам документ...</span>
+          </div>
+        </div>
+
+        <div class="chat-row">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" class="ava" alt="">
+          <div class="chat-meta">
+            <span class="name">Анна Смит</span>
+            <span class="msg">Встретимся в 19:00?</span>
+          </div>
+        </div>
+
+        <div class="chat-row">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" class="ava" alt="">
+          <div class="chat-meta">
+            <span class="name">Антон Чугур</span>
+            <span class="msg">Го в дотку</span>
+          </div>
+        </div>
+
+        <div style="position: absolute; bottom: 30px; width: 100%; text-align: center;">
+          <div style="width: 40px; height: 40px; background: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(0,0,0,0.5);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="f-item">
+    <h4>Приватность по умолчанию</h4>
+    <p>Вы сами выбираете, кто видит ваш профиль, номер, фото и статус — без долгих походов в настройки.</p>
+  </div>
+  <div class="f-item">
+    <h4>Без рекламы</h4>
+    <p>Neonik живет за счет подписки, а не продажи внимания пользователей. В чатах нет баннеров и «встроенных» постов.</p>
+  </div>
+  <div class="f-item">
+    <h4>Медиа и кастомизация</h4>
+    <p>Стикеры, реакции, быстрые ответы и гибкие уведомления — чтобы общение было живым, но не навязчивым.</p>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="how-inner">
+    <div class="how-header">
+      <p class="section-tag">Как это работает</p>
+      <h2>Обычный мессенджер, но с продуманной приватностью.</h2>
+      <p class="section-lead">
+        Никакой магии: создаёте аккаунт, добавляете контакты, общаетесь в личных и групповых чатах, а настройки приватности помогают держать всё под контролем.
+      </p>
+    </div>
+    <ol class="how-steps">
+      <li class="how-step">
+        <div class="how-step-index">01</div>
+        <div class="how-step-body">
+          <h3>Регистрация по номеру или нику.</h3>
+          <p>Можно показать только ник, а номер скрыть — как в привычных мессенджерах, но с более гибкими настройками.</p>
+        </div>
+      </li>
+      <li class="how-step">
+        <div class="how-step-index">02</div>
+        <div class="how-step-body">
+          <h3>Личные чаты и группы.</h3>
+          <p>Обычные переписки с друзьями, чаты по интересам и рабочие группы — без ленты, алгоритмов и лишнего шума.</p>
+        </div>
+      </li>
+      <li class="how-step">
+        <div class="how-step-index">03</div>
+        <div class="how-step-body">
+          <h3>Приватные настройки “под себя”.</h3>
+          <p>Скрывайте статус, фото, время последнего посещения и выбирайте, кто видит вас в поиске.</p>
+        </div>
+      </li>
+      <li class="how-step">
+        <div class="how-step-index">04</div>
+        <div class="how-step-body">
+          <h3>Дополнительная анонимность при необходимости.</h3>
+          <p>Для более чувствительных разговоров — отдельные приватные диалоги с усиленными настройками приватности.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="security" id="security">
+  <div class="security-grid">
+    <div class="security-text">
+      <p class="section-tag">Безопасность</p>
+      <h2>Приватность на каждый день, без паранойи.</h2>
+      <p class="section-lead">
+        Neonik — это привычный быстрый мессенджер, в котором можно спокойно общаться с друзьями, семьёй и коллегами,
+        не превращая каждую переписку в спецоперацию.
+      </p>
+      <ul class="security-list">
+        <li>Защита чатов шифрованием и безопасная передача данных.</li>
+        <li>Настройки видимости профиля, номера и статуса “в сети”.</li>
+        <li>Инструменты против спама и подозрительных контактов.</li>
+      </ul>
+    </div>
+    <div class="security-card">
+      <h3>Центр безопасности Neonik</h3>
+      <p>
+        В одном месте собраны устройства, где вы авторизованы, активные сессии, настройки приватности и рекомендации —
+        чтобы вы всегда понимали, что и кому видно.
+      </p>
+      <div class="security-meta">
+        <span>Контроль устройств</span>
+        <span>Гибкие настройки профиля</span>
+        <span>Рекомендации по безопасности</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-col">
+      <p class="section-tag">О нас</p>
+      <h2>Команда, которая живёт приватностью.</h2>
+      <p class="section-lead">
+        Neonik создают инженеры и дизайнеры, которые устали от мессенджеров, превращённых в рекламные площадки.
+        Мы строим продукт, в котором пользователь — не товар.
+      </p>
+    </div>
+    <div class="about-col">
+      <div class="about-stat">
+        <span class="about-stat-number">5+</span>
+        <span class="about-stat-label">лет опыта в кибербезопасности</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-number">0</span>
+        <span class="about-stat-label">проданных баз данных и пользовательских профилей</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-number">24/7</span>
+        <span class="about-stat-label">мониторинг инфраструктуры</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="channels" id="channels">
+  <div class="channels-header">
+    <p class="section-tag">Чаты и сообщества</p>
+    <h2>Личные диалоги, групповые чаты и каналы — в одном месте.</h2>
+    <p class="section-lead">
+      Neonik подходит и для общения с друзьями, и для роста сообществ: создавайте чаты по интересам, каналы с новостями
+      и закрытые пространства для своей команды.
+    </p>
+  </div>
+  <div class="channels-grid">
+    <article class="channel-card">
+      <h3>Личные и групповые чаты.</h3>
+      <p>Обсуждайте что угодно — от мемов до дедлайнов. Реакции, пересылка сообщений, закрепы и медиа — всё на месте.</p>
+      <ul>
+        <li>Аватары, статусы и кастомные эмодзи.</li>
+        <li>Упоминания и ответы в потоках.</li>
+      </ul>
+    </article>
+    <article class="channel-card">
+      <h3>Каналы для новостей и контента.</h3>
+      <p>Запускайте каналы для аудитории — публикации, опросы, комментарии по желанию и понятная модерация.</p>
+      <ul>
+        <li>Форматирование текста и предпросмотр ссылок.</li>
+        <li>Голосования и закреплённые посты.</li>
+      </ul>
+    </article>
+    <article class="channel-card">
+      <h3>Приватные пространства для команды.</h3>
+      <p>Отделяйте личное от рабочего: создавайте отдельные пространства с ролями, правами и своими настройками.</p>
+      <ul>
+        <li>Права на приглашения и просмотр истории.</li>
+        <li>Удобный онбординг новых участников.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="demo" id="demo">
+  <div class="demo-grid">
+    <div class="demo-header">
+      <p class="section-tag">Демо‑чат</p>
+      <h2>Посмотрите, как будет выглядеть ваша переписка.</h2>
+      <p class="section-lead">
+        Мы не усложняем интерфейс: привычные «баблы» сообщений, реакции, вложения и статус «печатает…» —
+        просто немного аккуратнее и чище, чем вы привыкли.
+      </p>
+    </div>
+    <div class="demo-chat">
+      <div class="demo-chat-inner">
+        <div class="demo-message demo-message-in">
+          <span class="demo-author">Никита</span>
+          <p>Привет! Ты уже попробовал Neonik?</p>
+          <span class="demo-meta">12:03</span>
+        </div>
+        <div class="demo-message demo-message-out">
+          <span class="demo-author">Вы</span>
+          <p>Да, нравится, что нет рекламы и всего этого лишнего шума.</p>
+          <span class="demo-meta">12:04</span>
+        </div>
+        <div class="demo-message demo-message-in">
+          <span class="demo-author">Никита</span>
+          <p>И плюс удобно настроить, кто видит номер и статус 👀</p>
+          <span class="demo-meta">12:04</span>
+        </div>
+        <div class="demo-message demo-message-out">
+          <span class="demo-author">Вы</span>
+          <p>Залетай в наш рабочий чат, скину ссылку на канал с обновлениями.</p>
+          <span class="demo-meta">12:05</span>
+        </div>
+        <div class="demo-typing">
+          <span class="demo-typing-dots">
+            <span></span><span></span><span></span>
+          </span>
+          <span class="demo-typing-text">Никита печатает…</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="pricing-header">
+    <p class="section-tag">Тарифы</p>
+    <h2>Прозрачная подписка без рекламы.</h2>
+    <p class="section-lead">
+      Neonik живёт за счёт подписки, а не продажи ваших данных. Вы платите за продукт, а не своим вниманием.
+    </p>
+    <div class="pricing-toggle" data-billing="monthly">
+      <button class="toggle-btn is-active" type="button" data-plan-billing="monthly">Месяц</button>
+      <button class="toggle-btn" type="button" data-plan-billing="yearly">Год —20%</button>
+    </div>
+  </div>
+
+  <div class="pricing-grid">
+    <article class="pricing-card">
+      <h3 class="pricing-title">Free</h3>
+      <p class="pricing-subtitle">Для личной приватной переписки.</p>
+      <div class="pricing-price" data-monthly="0" data-yearly="0">
+        <span class="pricing-price-value">0 ₽</span>
+        <span class="pricing-price-period">/мес</span>
+      </div>
+      <ul class="pricing-features">
+        <li>Неограниченные личные чаты</li>
+        <li>End‑to‑end шифрование</li>
+        <li>Самоуничтожающиеся сообщения</li>
+      </ul>
+      <a href="#" class="btn-main btn-outline pricing-cta">Начать бесплатно</a>
+    </article>
+
+    <article class="pricing-card pricing-card-featured">
+      <div class="pricing-pill">Рекомендуем</div>
+      <h3 class="pricing-title">Pro</h3>
+      <p class="pricing-subtitle">Для тех, кто работает с чувствительными данными.</p>
+      <div class="pricing-price" data-monthly="399" data-yearly="3190">
+        <span class="pricing-price-value">399 ₽</span>
+        <span class="pricing-price-period">/мес</span>
+      </div>
+      <ul class="pricing-features">
+        <li>Защищённые рабочие пространства</li>
+        <li>Защита входа (2FA, hardware‑ключ)</li>
+        <li>Шифрованные бэкапы истории</li>
+      </ul>
+      <a href="#" class="btn-main btn-filled pricing-cta">Активировать Pro</a>
+    </article>
+
+    <article class="pricing-card">
+      <h3 class="pricing-title">Teams</h3>
+      <p class="pricing-subtitle">Для команд и небольших компаний.</p>
+      <div class="pricing-price" data-monthly="990" data-yearly="7990">
+        <span class="pricing-price-value">990 ₽</span>
+        <span class="pricing-price-period">/мес</span>
+      </div>
+      <ul class="pricing-features">
+        <li>Ролевые модели и права доступа</li>
+        <li>Журналы действий и экспорта</li>
+        <li>Приоритетная техподдержка</li>
+      </ul>
+      <a href="#" class="btn-main btn-outline pricing-cta">Запросить доступ</a>
+    </article>
+  </div>
+</section>
+
+<section class="compare" id="compare">
+  <div class="compare-inner">
+    <div class="compare-header">
+      <p class="section-tag">Neonik vs другие</p>
+      <h2>Как привычный мессенджер, только чуть спокойнее.</h2>
+      <p class="section-lead">
+        Мы не соревнуемся за внимание — просто даём место, где можно общаться без навязчивых лент, псевдо‑рекомендаций и лишней суеты.
+      </p>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-col">
+        <h3>Обычные мессенджеры</h3>
+        <ul class="compare-list compare-list-negative">
+          <li>Реклама в чатах и между историями.</li>
+          <li>Сложные настройки приватности, спрятанные в глубине меню.</li>
+          <li>Сообщества, в которых легко потеряться из‑за шума.</li>
+        </ul>
+      </div>
+      <div class="compare-col">
+        <h3>Neonik</h3>
+        <ul class="compare-list compare-list-positive">
+          <li>Никакой встроенной рекламы и баннеров.</li>
+          <li>Простые настройки видимости профиля, номера и статуса.</li>
+          <li>Аккуратные чаты и каналы, без лишних отвлечений.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="referral" id="referral">
+  <div class="referral-inner">
+    <div class="referral-text">
+      <p class="section-tag">Пригласить друзей</p>
+      <h2>Делитесь Neonik и получайте бонусы.</h2>
+      <p class="section-lead">
+        Приглашайте друзей и коллег, отправляя им личный инвайт‑код. За каждого активного пользователя вы получаете бонусы
+        или дополнительные месяцы Pro — без скрытых условий.
+      </p>
+    </div>
+    <div class="referral-card">
+      <div class="referral-label">Ваш инвайт‑код</div>
+      <div class="referral-code-row">
+        <span class="referral-code">NEO‑7F3Q‑9L</span>
+        <button class="referral-copy" type="button">Скопировать</button>
+      </div>
+      <p class="referral-note">Поделитесь кодом с друзьями и получите до 3 месяцев Pro за активные приглашения.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-header">
+    <p class="section-tag">Отзывы</p>
+    <h2>Тем, кто уже перешёл на Neonik, есть что сказать.</h2>
+  </div>
+  <div class="testimonials-grid">
+    <article class="testimonial-card">
+      <p class="testimonial-text">
+        «Мы в агентстве отказались от мессенджеров с рекламой. Neonik стал тихим рабочим пространством, где нет шума и отвлечений».
+      </p>
+      <div class="testimonial-meta">
+        <span class="testimonial-name">Игорь Л.</span>
+        <span class="testimonial-role">руководитель digital‑агентства</span>
+      </div>
+    </article>
+    <article class="testimonial-card">
+      <p class="testimonial-text">
+        «Клиенты юридической практики ценят приватность. Мы спокойно обсуждаем чувствительные кейсы без страха утечек».
+      </p>
+      <div class="testimonial-meta">
+        <span class="testimonial-name">Анна К.</span>
+        <span class="testimonial-role">частный юрист</span>
+      </div>
+    </article>
+    <article class="testimonial-card">
+      <p class="testimonial-text">
+        «Для нашей распределённой команды Neonik оказался компромиссом между удобством и паранойей по безопасности».
+      </p>
+      <div class="testimonial-meta">
+        <span class="testimonial-name">Студия Hyperline</span>
+        <span class="testimonial-role">продуктовая команда</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <p class="section-tag">FAQ</p>
+      <h2>Ответы на частые вопросы.</h2>
+      <p class="section-lead">
+        Если не нашли ответ — напишите нам из приложения или на почту поддержки, мы вернёмся с ответом.
+      </p>
+    </div>
+    <div class="faq-list">
+      <button class="faq-item" type="button">
+        <div class="faq-item-header">
+          <span class="faq-question">Можете ли вы читать мои сообщения?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Мы не используем ваши личные переписки для рекламы и рекомендаций. Сообщения передаются по защищённым каналам, а для более приватных разговоров можно включить усиленные настройки приватности.</p>
+        </div>
+      </button>
+
+      <button class="faq-item" type="button">
+        <div class="faq-item-header">
+          <span class="faq-question">Можно ли пользоваться анонимно, без публичного номера?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да. Можно скрыть номер от других пользователей и общаться по нику. Вы сами выбираете, кто видит ваш профиль, фото и статус.</p>
+        </div>
+      </button>
+
+      <button class="faq-item" type="button">
+        <div class="faq-item-header">
+          <span class="faq-question">Есть ли резервные копии чатов?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да, в платных тарифах доступно резервное копирование. Настройки позволяют выбрать, какие чаты сохранять и на каких устройствах.</p>
+        </div>
+      </button>
+
+      <button class="faq-item" type="button">
+        <div class="faq-item-header">
+          <span class="faq-question">Подойдёт ли Neonik для компании или команды?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Да, тариф Teams создан для небольших команд и проектов: есть ролевые модели, разграничение прав и удобные групповые чаты для работы.</p>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="download-inner">
+    <div class="download-header">
+      <p class="section-tag">Скачать Neonik</p>
+      <h2>Начните общаться так, как вам комфортно.</h2>
+      <p class="section-lead">
+        Подключайтесь с любого устройства: начните переписку на телефоне, продолжите на ноутбуке, закончите на планшете —
+        всё синхронизируется автоматически.
+      </p>
+    </div>
+    <div class="download-grid">
+      <div class="download-platforms">
+        <button class="download-badge" type="button">
+          <span class="download-icon-circle">
+            <span class="download-icon-dot"></span>
+          </span>
+          <span class="download-badge-text">
+            <span class="download-badge-label">Скачать для</span>
+            <span class="download-badge-title">iOS</span>
+          </span>
+        </button>
+        <button class="download-badge" type="button">
+          <span class="download-icon-circle">
+            <span class="download-icon-dot"></span>
+          </span>
+          <span class="download-badge-text">
+            <span class="download-badge-label">Скачать для</span>
+            <span class="download-badge-title">Android</span>
+          </span>
+        </button>
+        <button class="download-badge" type="button">
+          <span class="download-icon-circle">
+            <span class="download-icon-dot"></span>
+          </span>
+          <span class="download-badge-text">
+            <span class="download-badge-label">Открыть в</span>
+            <span class="download-badge-title">Desktop</span>
+          </span>
+        </button>
+        <button class="download-badge" type="button">
+          <span class="download-icon-circle">
+            <span class="download-icon-dot"></span>
+          </span>
+          <span class="download-badge-text">
+            <span class="download-badge-label">Запустить</span>
+            <span class="download-badge-title">Web‑версию</span>
+          </span>
+        </button>
+      </div>
+      <div class="download-note">
+        <p>Скоро: публичная бета с инвайт‑кодами. Оставьте заявку в приложении и получите ранний доступ для себя и друзей.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">NEONIK</div>
+    <div class="footer-links">
+      <a href="#features">Возможности</a>
+      <a href="#security">Безопасность</a>
+      <a href="#about">О нас</a>
+      <a href="#">Поддержка</a>
+    </div>
+    <div class="footer-meta">
+      <span>© 2026 Neonik</span>
+      <span>Создано с заботой о приватности</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
